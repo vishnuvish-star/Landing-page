@@ -1,0 +1,146 @@
+/*global style*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat",sans-serif;
+}
+header
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: transparent;
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a {
+    transition: all 0.3 ease 0s;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+nav ul li a:hover{
+    color: #000;
+    transition: all 0.3 ease 0s;
+}
+header > button{
+    padding: 9px 25px;
+    background-color: #4acf50;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3 ease 0s;
+}
+header > button:hover {
+    background-color: rgba(0, 130, 169,0.8);
+
+
+}
+/*wrapper*//* */
+.wrapper{
+    background: url(../img/virat-kohli\ transparent.png)no-repeat center /*cover mode is expand the image*/center / cover;
+    width:100%;
+    display:block;
+    position: relative;
+    /*front layer */
+    z-index: 1;
+}
+/*overlay color */
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*back side layer */
+    z-index: -1;
+}
+/* content styling*/
+.content{
+    display: flex;
+    padding:80px 10%;
+    justify-content: space-between;
+    color: #fff;
+
+}
+.hero-info h1 {
+    font-size: 40px;
+    margin-right:20px;
+}
+.hero-info p {
+    margin: 30px;
+    font-family: 400;
+    line-height: 2;
+}
+
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-outline {
+    border-radius: 30px;
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: 12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+/* button hover */
+.btn-outline:hover {
+    background: #ffffff;
+    color: #6730e3;
+}
+/*this is class of social links */
+.social-links {
+    padding: 20px;
+    margin-top: 140px;
+}
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+/* .button-social is comman button class */
+.button-social {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 45px;
+}
+.bg-twitter {
+    background-color: #00acee ;
+}  
+.bg-instagram {
+    background-color:  #fd1d1d;
+}

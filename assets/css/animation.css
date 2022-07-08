@@ -1,0 +1,21 @@
+/*Animations*/
+.name {
+    animation-name:blinkingcolors ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes blinkingcolors {
+0% {
+    color:#FD1d1d;
+
+}
+25% {
+    color:green ;
+}
+50% {
+    color:#e25e3b;
+}
+100% {
+    color:yellow;
+}
+}
